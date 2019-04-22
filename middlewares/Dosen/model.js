@@ -4,6 +4,7 @@ const connect = require('../../config/connection')
 const tbl_Dosen = connect.define(
   'Dosens',
   {
+    // attributes
     id_dosen: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
@@ -13,7 +14,7 @@ const tbl_Dosen = connect.define(
       type: Sequelize.INTEGER(11),
       allowNull: false
     },
-    // attributes
+
     nameDosen: {
       type: Sequelize.STRING(255),
       allowNull: false
